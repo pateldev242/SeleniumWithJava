@@ -1,0 +1,39 @@
+Annotations for TestNg - Evaluated at runtime
+
+Pre-requisites - @BeforeSuite, @BeforeTest, @BeforeClass @BeforeMethod
+//first open browser
+//prepare test data - username, password
+
+actual steps - @Test
+//enter username, password
+//click submit
+//verify whether you are able to login
+
+post-cleanup - @AfterMethod, @AfterClass, @AfterTest, @AfterSuite
+//take screenshot
+//close the browser
+//clear the test values in variable
+//close the database
+//close the files
+//delete temporary files
+//send an alert or email
+
+Locators on WebPage
+ID - Most Unique form of Locator. (Priority)
+Name - Name of the element
+className - their program names-- logical names
+Link Text - Just check if it has <a> in html it is called anchor tag
+Partial Link Text - <a> but if you know only partial text
+Css - font, colour, text style... formatting properties of an element
+Xpath - DOM Object (Document Object Model) XMl Path Expression
+Text() - works with Xpath
+
+Find an element using attribute and value
+//Tag-name[@attribute='value']
+Using Text
+//Tag-name[text()='value']
+Using Multiple attributes
+//div[@class='value' and @a ='facebook.com']
+//tag[text()='value and @a ='facebook.com']
+Using Contains
+//h2[contains(text(),'facebook']
